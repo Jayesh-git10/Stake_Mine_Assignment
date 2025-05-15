@@ -1,0 +1,90 @@
+.top {
+    height: 60px;
+    color: yellow;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(80, 80, 146);
+    box-shadow: 5px 5px 8px rgb(66, 67, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.dollar {
+    opacity: 1;
+    height: 35px;
+    width: 40px;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 8px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.diamond {
+    border-radius: 15px;
+    background-color: rgb(80, 80, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.buttons button {
+    background-color: #f9a825;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    flex-grow: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.buttons button:hover {
+    background-color: #ffc107;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    border-radius: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
